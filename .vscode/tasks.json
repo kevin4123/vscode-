@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /* ---------- CMake Configure ---------- */
+    {
+      "label": "CMake Configure ",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "build",
+        "-G","MinGW Makefiles",   //修改
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "-DCMAKE_VERBOSE_MAKEFILE=ON"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+    },
+    /* ---------- openOCD flash ---------- */
+    {
+      "label": "openOCD flash",  
+      "type": "shell",   
+      "command": "openocd",
+      "args": [
+        "-f", "interface/stlink.cfg",   //修改
+        "-f", "target/stm32f1x.cfg",    //修改
+        "-c", "program build/<filename>.elf verify reset exit"  //修改
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}

@@ -5,6 +5,9 @@
     "editor.guides.bracketPairsHorizontal": true,     // 横向也显示
     "editor.guides.highlightActiveBracketPair": true,  // 高亮当前括号对
     "editor.mouseWheelZoom": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
     /*fittencode*/
     "fittencode.languagePreference.displayPreference": "en",
     "fittencode.languagePreference.commentPreference": "en",
@@ -30,13 +33,12 @@
         "*.o": "hexEditor.hexedit"
     },
     /*C/C++ settings*/
-    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.intelliSenseEngine": "default",
     /*cortex-debug*/
     "cortex-debug.openocdPath": "D:/openOCD/openocd/bin/openocd.exe",
                             // "cortex-debug.armToolchainPath.linux": "/opt/toolchains/gcc-arm- none-eabi-10.3-2021.10/bin",
     "cortex-debug.armToolchainPath.windows": "D:/arm-gnu-toolchain/arm-gnu-toolchain/bin",
                             // "cortex-debug.gdbPath.linux": "/opt/toolchains/gcc-arm-none-eabi-10.3-2021.10/bin//arm-none-eabi-gdb",
     "cortex-debug.gdbPath.windows": "D:/arm-gnu-toolchain/arm-gnu-toolchain/bin/arm-none-eabi-gdb.exe",
-    "digital-ide.welcome.show": false,
-
+	"digital-ide.welcome.show": false,
 }

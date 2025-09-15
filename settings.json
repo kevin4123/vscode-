@@ -8,6 +8,18 @@
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
+	/*terminal*/
+	"terminal.integrated.profiles.windows": {
+		"MSVC x64": {
+			"path": "cmd.exe",
+			"args": ["/k", "D:\\MSCV2022\\VC\\Auxiliary\\Build\\vcvars64.bat"]
+		},
+		"MSVC x86":{
+			"path": "cmd.exe",
+			"args": ["/k", "D:\\MSCV2022\\VC\\Auxiliary\\Build\\vcvars32.bat"]
+		}
+
+	},
     /*fittencode*/
     "fittencode.languagePreference.displayPreference": "en",
     "fittencode.languagePreference.commentPreference": "en",
